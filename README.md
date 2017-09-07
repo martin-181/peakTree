@@ -5,13 +5,13 @@ Originally intended for atmospheric research cloud radar Doppler spectra, but al
 
 ### Usage
 
-```
+```python
 import peakTree
 peaks, pt, threslist = peakTree.detect_peak_recursive(data_array, threshold, lambda thres: thres*1.5)
 ```
 
 Internally following steps are employed:
-```
+```python
 pt.insert(peak, thres)
 pt.concat()
 pt.extendedges()
