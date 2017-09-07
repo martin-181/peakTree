@@ -113,23 +113,23 @@ def detect_peak_simple(array, lthres):
     return peakindices
 
 if __name__ == "__main__":
-    t = Tree((0, 190), root=True)
-    t.insert((20, 100))
+    t = Tree((0, 190), 0.3, root=True)
+    t.insert((20, 100), 0.5)
 
-    t.insert((22, 90))
-    t.insert((24, 88))
+    t.insert((22, 90), 0.8)
+    t.insert((24, 88), 1.2)
 
-    t.insert((25, 65))
-    t.insert((30, 32))
-    t.insert((35, 50))
-    t.insert((36, 42))
-    t.insert((44, 47))
+    t.insert((25, 65), 1.5)
+    t.insert((30, 32), 1.8)
+    t.insert((35, 50), 1.8)
+    t.insert((36, 42), 2.1)
+    t.insert((44, 47), 2.1)
 
-    t.insert((51, 55))
+    t.insert((51, 55), 1.8)
 
-    t.insert((40, 50))
-    t.insert((40, 50))
-    t.insert((70, 80))
+    t.insert((40, 50), 2.1)
+    t.insert((40, 50), 2.4)
+    t.insert((70, 80), 1.5)
 
     #t.insert((110, 120))
 
